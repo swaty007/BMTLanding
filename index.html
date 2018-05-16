@@ -104,7 +104,7 @@
                     </p>
                     <script>
                         var timer = document.getElementById("timer");
-                        var countDownDate = new Date(timer.dataset.time).getTime();
+                        var countDownDate = new Date(timer.dataset.time.replace(/-/g, "/")).getTime();
                         var x = setInterval(function() {
                             var now = new Date().getTime();
                             var distance = countDownDate - now;
