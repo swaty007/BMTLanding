@@ -1,0 +1,73 @@
+.contact-us {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  background-image: url('../../img/img_main2.jpg');
+  background-size: cover;
+  background-position: 50%;
+  .title {
+    color: @color-1;
+    font-family: @font-1;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .sub-title {
+    color: @color-1;
+    font-family: @font-1;
+    font-size: 18px;
+    letter-spacing: 0.56px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .form-group {
+    width:65%;
+  }
+  input {
+    background-color: rgba(19,19,19,0.2);
+    color: @color-1;
+    font-family: @font-1;
+    font-size: 18px;
+    letter-spacing: 0.64px;
+    line-height: 20px;
+    padding: 10px 24px;
+    width: 100%;
+    border-radius: 21px;
+    border: 1px solid #979797;
+    outline: none !important;
+    box-shadow: none!important;
+    appearance: none;
+    -webkit-appearance: none;
+    &::placeholder {
+      color: rgba(255,255,255,0.57);
+    }
+  }
+  .btn-sbmt {
+    background-color: #EBB43A;
+    padding: 10px 31px;
+    color: #040404;
+    font-family: @font-1;
+    font-size: 16px;
+    letter-spacing: 0.57px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #EBB43A;
+    outline: none;
+    transition: 0.3s all;
+    border-radius: 21px;
+    margin-left: 10px;
+    box-shadow: 0 2px 2px 0 rgba(20,18,18,0.5);
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  @media (max-width:768px) {
+    .form-group {
+      width:100%;
+      margin-bottom: 25px;
+    }
+    text-align: center;
+  }
+}

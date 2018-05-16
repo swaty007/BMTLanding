@@ -1,0 +1,105 @@
+.output-distribution {
+  background-color: #1E1E1E;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  @media(max-width:991px) {
+    padding-bottom: 10px;
+  }
+  .title {
+    color: #F6F6F6;
+    font-family: @font-1;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 45px;
+    @media(max-width:991px) {
+      margin-bottom: 25px;
+    }
+  }
+  .text {
+    color: #F6F6F6;
+    font-family: @font-1;
+    font-size: 18px;
+    letter-spacing: 0.56px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .yellow-title {
+    color: @color-3;
+    font-family: @font-1;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.56px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .line-blocks {
+    margin-bottom: 10px;
+    .line {
+      height: 5px;
+      width: 51px;
+      margin-right: 13px;
+      display: inline-block;
+      &.yellow {
+        background-color: @color-3;
+      }
+      &.blue {
+        background: linear-gradient(128.07deg, #6E6FB0 0%, #6868E1 100%);
+      }
+    }
+    .line-text {
+      color: #F6F6F6;
+      font-family: @font-1;
+      font-size: 16px;
+      letter-spacing: 0.56px;
+      line-height: 24px;
+    }
+  }
+  .gradient-line-block {
+    margin-bottom: 25px;
+    @media(max-width:991px) {
+      margin-bottom: 30px;
+    }
+    .grad-title {
+      color: #F6F6F6;
+      font-family: @font-1;
+      font-size: 14px;
+      letter-spacing: 0.56px;
+      line-height: 16px;
+      margin-bottom: 5px;
+      font-weight: normal;
+    }
+    .grad-line {
+      display: inline-block;
+      height: 22px;
+      margin-right: 12px;
+      vertical-align: middle;
+      &.yellow-1 {
+        background: linear-gradient(270deg, rgba(251,210,73,0.24) 0%, #F5A623 100%);
+      }
+      &.blue-1 {
+        background: linear-gradient(270deg, rgba(42,97,105,0.48) 0%, #236DF5 100%);
+      }
+      &.yellow-2 {
+        background: linear-gradient(270deg, rgba(251,210,73,0.24) 0%, #D9AD65 100%);
+      }
+      &.blue-2 {
+        background: linear-gradient(270deg, rgba(73,244,251,0.24) 0%, #2468EB 100%);
+      }
+    }
+    .grad-text {
+      color: #F6F6F6;
+      font-family: @font-1;
+      font-size: 18px;
+      letter-spacing: 0.56px;
+      line-height: 21px;
+      vertical-align: middle;
+    }
+  }
+  .img-block {
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+    }
+  }
+}

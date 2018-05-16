@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>E7732070-7956-4980-AC4C-8517617D99ED</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#C79651" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BMT_landing" transform="translate(-667.000000, -6303.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-20" transform="translate(579.000000, 6302.000000)">
+                <path d="M108,1 L90,1 C88.897,1 88,1.897 88,3 L88,21 C88,22.103 88.897,23 90,23 L97.5,23 C97.776,23 98,22.776 98,22.5 L98,15.5 C98,15.224 97.776,15 97.5,15 L96.521,15 C96.245,15 96.021,14.776 96.021,14.5 L96.021,11.5 C96.021,11.224 96.245,11 96.521,11 L97.5,11 C97.776,11 98,10.776 98,10.5 L98,9.5 C98,7.019 100.019,5 102.5,5 L105.5,5 C105.776,5 106,5.224 106,5.5 L106,8.5 C106,8.776 105.776,9 105.5,9 L102.5,9 C102.224,9 102,9.224 102,9.5 L102,10.5 C102,10.776 102.224,11 102.5,11 L105.5,11 C105.647,11 105.787,11.064 105.881,11.176 C105.977,11.289 106.018,11.437 105.993,11.583 L105.493,14.583 C105.453,14.824 105.246,15 105,15 L102.5,15 C102.224,15 102,15.224 102,15.5 L102,22.5 C102,22.776 102.224,23 102.5,23 L108,23 C109.103,23 110,22.103 110,21 L110,3 C110,1.897 109.103,1 108,1" id="sc_fb"></path>
+            </g>
+        </g>
+    </g>
+</svg>

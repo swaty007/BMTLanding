@@ -1,0 +1,238 @@
+.header {
+  nav.navbar {
+    background-color: @color-1;
+    margin-bottom: 0;
+    border: none;
+    min-height: 40px;
+    border-radius: 0;
+    @media (min-width: 768px) and (max-width: 991px) {
+      .navbar-collapse.collapse {
+        display: none !important;
+      }
+      .navbar-collapse.collapse.in {
+        display: block !important;
+      }
+      .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+      }
+      .navbar-header {
+        float:none;
+      }
+      .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+        &>li {
+          float: none;
+        }
+      }
+    }
+    .navbar-container {
+      padding-right: 30px;
+      padding-left: 30px;
+      @media(min-width:992px) and (max-width: 1200px) {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+    @media (min-width: 991px) {
+      .navbar-collapse {
+        line-height: 0;
+      }
+      .navbar-nav {
+        display: inline-block;
+        &:first-child {
+          float:none;
+        }
+      }
+    }
+    .navbar-brand {
+      height: auto;
+      outline: none;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      img {
+        width: 100%;
+        max-width: 133px;
+        @media(min-width:992px) and (max-width: 1200px) {
+          max-width: 120px;
+        }
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .navbar-toggle {
+      height: 36px;
+      width: 36px;
+      cursor: pointer;
+      text-decoration: none;
+      outline: none;
+      margin: 0;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 5;
+      padding: 0;
+      &:before {
+        background-image: url(../../img/ic_menu.svg);
+        content: "";
+        width: 36px;
+        height: 36px;
+        display: block;
+        background-size: auto 26px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &:not(.collapsed):before {
+        background-image: url(../../img/ic_close.svg);
+        background-size: auto 36px;
+      }
+    }
+    ul {
+      li {
+        line-height: 80px;
+        @media(max-width:991px) {
+          line-height: 60px;
+        }
+        a {
+          color: @color-2;
+          font-family: @font-1;
+          font-size: 18px;
+          line-height: 20px;
+          transition: 0.3s all;
+          background-color: transparent;
+          padding: 30px 15px;
+          @media(min-width:1081px) and (max-width: 1200px) {
+            padding: 30px 10px;
+          }
+          @media(min-width:992px) and (max-width: 1080px) {
+            padding: 30px 5px;
+            text-indent: -1px;
+          }
+          @media (max-width:991px) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          &:hover {
+            background-color: transparent;
+            color: @color-2;
+          }
+          &.active {
+            color: @color-2;
+          }
+          &.black-btn {
+            background-color: @color-2;
+            color: @color-1;
+            padding: 7px 20px;
+            border-radius: 20px;
+            line-height: 21px;
+            vertical-align: middle;
+            display: inline-block;
+            border: 1px solid @color-2;
+            @media (min-width: 992px) {
+              margin-right: 10px;
+            }
+            @media(min-width:992px) and (max-width: 1050px) {
+              text-indent: -0.5px;
+              padding: 7px 12px;
+              margin-right: 5px;
+            }
+            &:hover {
+              color: @color-2;
+              background-color: @color-1;
+            }
+          }
+        }
+        &.open {
+          a {
+            background-color: transparent;
+          }
+          table.table.dropdown-menu {
+            display: table;
+            @media (max-width: 991px) {
+              width: 100%;
+            }
+          }
+        }
+        &.dropdown {
+          &.open {
+            .caret {
+              transform: rotate(180deg);
+            }
+          }
+          .divider-line {
+            margin: 8px 0;
+          }
+          a.dropdown-toggle {
+            color: @color-2;
+            font-size: 17px;
+            line-height: 20px;
+            border: 1px solid @color-2;
+            padding: 6px 15px;
+            border-radius: 20px;
+            vertical-align: middle;
+            display: inline-block;
+            transition: 0.3s transform;
+            .caret {
+              transition: 0.3s transform;
+            }
+          }
+          .dropdown-menu {
+            text-align: center;
+            //background-color: @color-bg;
+            border-radius: 4px;
+            li a {
+              padding-top: 6px;
+              padding-bottom: 6px;
+              padding-right: 20px;
+              padding-left: 20px;
+              font-size: 13px;
+              line-height: 18px;
+            }
+            @media (min-width:991px) {
+              li a {
+                color: @color-2;
+                &:hover {
+                  color: @color-3;
+                }
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                top: -10px;
+                right: 10px;
+                width: 0;
+                height: 0;
+                transition: all 0.3s;
+                //border-bottom: 10px solid @color-bg;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+              }
+            }
+          }
+          @media (max-width:991px) {
+            .dropdown-toggle {
+              color: @color-3;
+            }
+            .dropdown-menu {
+              position: static;
+              float: none;
+              width: auto;
+              margin-top: 0;
+              border: 0;
+              -webkit-box-shadow: none;
+              box-shadow: none;
+              background-color: transparent;
+              li a {
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-right: 20px;
+                padding-left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Amor Sans Text Pro";
+  src: url('../bmt_fonts/AmorSansTextPro.otf');
+  src: url('../bmt_fonts/AmorSansTextPro.otf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Amor Sans Text Pro";
+  src: url('../bmt_fonts/AmorSansTextPro-Bold.otf');
+  src: url('../bmt_fonts/AmorSansTextPro-Bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-1: 'Amor Sans Text Pro';
+
+@color-1: #ffffff;
+@color-2: #000000;
+@color-3: #D8A941;
+@color-4: #182940;
+@color-bg: #1E1E1E;
+
+h1,h2,h3,h4,h5,p {
+  margin-top:0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: @font-1;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: normal;
+}
+.white-btn {
+  color: @color-2;
+  font-family: @font-1;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  padding: 10px 60px;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  background-color: @color-1;
+  border: 1px solid @color-1;
+  border-radius: 24px;
+  transition: 0.3s all;
+  &:hover {
+    color: @color-1;
+    background-color: @color-2;
+    text-decoration: none;
+  }
+}
+
+@import "header";
+@import "main-block";
+@import "project-advantages";
+@import "about-us";
+@import "mining-tokens";
+@import "output-distribution";
+@import "token-allocation";
+@import "sale-details";
+@import "roadmap";
+@import "advisors";
+@import "contact-us";
+@import "footer";
+
+
+.slick-dots {
+  list-style: none;
+  padding: 0;
+  li {
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    margin-right: 12px;
+    button {
+      height: 14px;
+      width: 14px;
+      overflow: hidden;
+      background-color: #D8D8D8;
+      color: #D8D8D8;
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+    &.slick-active {
+     button {
+       background-color: #EBB43A;
+       color: #EBB43A;
+     }
+    }
+  }
+}

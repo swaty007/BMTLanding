@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>D8309EA6-657B-486A-8C10-3CF129638D7E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#C79651" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BMT_landing" transform="translate(-579.000000, -6302.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-20" transform="translate(579.000000, 6302.000000)">
+                <path d="M10.1662067,14.3139961 L10,17 C10.2727273,17 10.3932273,16.8654594 10.5454545,16.7058151 L11.7209772,15.4728332 L14.9105596,17.8501657 C15.4603259,18.1561869 15.857112,17.9977441 15.9940529,17.3352391 L17.9551199,8.01228986 C18.1558989,7.20020644 17.648273,6.83188346 17.1223364,7.07276878 L5.6069827,11.5522829 C4.82095197,11.8703444 4.8255346,12.3127481 5.46370576,12.5098744 L8.41880514,13.4403603 L15.2601745,9.08607275 C15.5831404,8.88849413 15.8795569,8.99471663 15.636269,9.21254558 L10.2976248,14.072844 L10.1856364,14 L10.1741744,14.1852332 L10.0928202,14.259298 L10.1662067,14.3139961 Z M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z" id="sc_tel"></path>
+            </g>
+        </g>
+    </g>
+</svg>

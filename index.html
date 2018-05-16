@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMT</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="slick/slick.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet/less" type="text/css" href="css/less/main.less" />
+    <script src="js/less.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<header class="header clearfix">
+    <nav id="w0" class="navbar">
+        <div class="container-fluid navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#w0-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href=""><img src="img/img_bmlogo@2x.png" alt="logo"></a>
+            </div>
+            <div id="w0-collapse" class="collapse navbar-collapse text-center">
+                <ul id="w1" class="navbar-nav nav text-center">
+                    <li>
+                        <a class="scroll" href="#about-ua">About BMT</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#mining-tokens">Mining Tokens</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#project-advantages">Advantages</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#token-allocation">Anual Revenue</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#roadmap">Roadmap</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#output-distribution">Tokens Distribution</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav text-center navbar-right">
+                    <li>
+                        <a class="black-btn" href="#">White Paper</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                            EN                                <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">EN</a>
+                            </li>
+                            <li>
+                                <a href="#">EN</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="main-block" class="main-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="title">
+                    Balkan Mining Company
+                </h1>
+                <p class="text">
+                    Is a cooperative mining facility, established to maximize profits from cryptocurrency mining via reduced costs for maintenance, operations, and equipment due to centralization and increased volumes.
+                </p>
+                <a href="#" class="white-btn">
+                    Buy Tokens
+                </a>
+            </div>
+        </div>
+
+        <div class="pre-sale-block">
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4 text-center">
+                    <h3 class="pre-title">Tokensale Start in:</h3>
+                    <p class="timer" id="timer" data-time="2018-12-31 12:00:00">
+                        <span id="days">20</span> DAY <span id="hours">20</span>:<span id="minutes">36</span>:<span id="seconds">04</span>
+                    </p>
+                    <script>
+                        var timer = document.getElementById("timer");
+                        var countDownDate = new Date(timer.dataset.time).getTime();
+                        var x = setInterval(function() {
+                            var now = new Date().getTime();
+                            var distance = countDownDate - now;
+
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                            if(parseInt(seconds) < 10) seconds = "0" + seconds;
+                            if(parseInt(minutes) < 10) minutes = "0" + minutes;
+                            if(parseInt(hours) < 10) hours = "0" + hours;
+                            if(parseInt(days) < 10) days = "0" + days;
+
+                            document.getElementById("days").innerHTML = days;
+                            document.getElementById("hours").innerHTML = hours;
+                            document.getElementById("minutes").innerHTML = minutes;
+                            document.getElementById("seconds").innerHTML = seconds;
+
+                            // If the count down is finished, write some text
+//                                        if (distance < 0) {
+//                                            clearInterval(x);
+//                                            document.getElementById("time").innerHTML = "EXPIRED";
+//                                        }
+                        }, 1000);
+
+                    </script>
+                </div>
+            </div>
+            <div class="discount-block">
+                <p class="percents-text">
+                    +20%
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="line-wrap-vertical-fix">
+                        <p class="line-text first-block">
+                            Softcap<br>
+                            100 BMT
+                        </p>
+                        <div class="line">
+                            <span data-value="1200 BMT" style="width:30%;"></span>
+                        </div>
+                        <p class="line-text second-block">
+                            Hardcap<br>
+                            100 000 000BMT
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="full-border">
+                        <p class="full-text">
+                            1 BMT = 1 USD
+                        </p>
+                    </div>
+                        <hr class="separator">
+                        <h4 class="block-footer-title">
+                            Get Notified When Sale will be started
+                        </h4>
+                        <p class="block-footer-text">
+                            We will send you a reminder about start
+                            of Sale Tokens
+                        </p>
+                    <a href="#" class="inv-btn">Notified</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section id="about-ua" class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title">
+                    About BMC
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img-block">
+                    <img src="img/img_mb01@2x.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="text">
+                    Unlike other cooperative mining companies, we consider investor funds safety and transparency one of our main priorities. For this reason, we provide personal cabinet for every investor with extensive information including list of active ASICs and GPUs, total hash rate, mined blocks count, electricity consumption and maintenance costs;
+                    Main Balkan mining facility is located in Serbia, which means that we have one of the lowest electricity prices in Europe for enterprises, only 6.4 € cents per kWh, which is about 2.5 times cheaper compared to an average European household.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="project-advantages" class="project-advantages">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="title">
+                    Project Advantages
+                </h2>
+                <p class="text">
+                    We are a centralized mining facility, which means less costs for maintenance and facilities per unit of processing power. We have negotiated heavy discounts directly from manufacturers of specific mining equipment. We keep track of our equipment, update it exactly when it is financially beneficial.<br>
+                    After equipment becomes obsolete we do not throw it away but resell it, reducing capital expenditures by extra 5% to 10%.<br>
+                    Token holders may sell BM tokens on cryptocurrencies exchange starting from October 2018. This way investing in Balkan mining is much safer compared to regular cloud mining.
+                </p>
+            </div>
+            <div class="col-md-6">
+               <div class="img-block">
+                   <img src="img/img_mb02@2x.png" alt="">
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="mining-tokens" class="mining-tokens">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img-block">
+                    <img src="img/img_gf01@2x.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="title">
+                    Mining Tokens
+                </h2>
+                <p class="text">
+                    To secure from high volatility of cryptocurrencies mining power is diversified and equipment is assembled to mine top 6 algorithms according to market capitalization of its cryptocurrencies.<br>
+                    One BM token is equal to 1 US dollar during ICO stage, maximum of 100 000 000 tokens can be issued. BM tokens are based on stellar platform, and after ICO finish could be traded on cryptocurrency stock exchanges.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="output-distribution" class="output-distribution">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title">Output Distribution and Financiale Forecasts</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="img-block">
+                    <img src="img/img_gf02@2x.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <p class="text">
+                    Our calculations show that investment in Balkan Mining Token, yields 1.6 times more, comparing to average cloud mining company. Due to reinvestments, net profit difference between cloud or home mining and investment in BM token will look in this:
+                </p>
+                <div class="line-blocks">
+                    <span class="line yellow"></span><span class="line-text">Investment in BMT</span>
+                </div>
+                <div class="line-blocks">
+                    <span class="line blue"></span><span class="line-text">Cloud or home mining</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text">
+                    Amount of that can be received, also depends on whether the token holder is converting his mined cryptocurrencies share to fiat daily, to minimize risks.
+                </p>
+                <h3 class="yellow-title">
+                    Profit per year, cash out daily
+                </h3>
+                <div class="gradient-line-block">
+                    <h4 class="grad-title">
+                        Year 1
+                    </h4>
+                       <div style="width: 20%" class="grad-line yellow-1"></div><span class="grad-text">8,3 kUSD</span>
+                </div>
+                <div class="gradient-line-block">
+                    <h4 class="grad-title">
+                        Year 2
+                    </h4>
+                    <div style="width: 30%" class="grad-line blue-1"></div><span class="grad-text">13,4 kUSD</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="text">
+                    Or holds mined assets, to exchange them two years after the initial investment, with higher yield and higher risk.
+                </p>
+                <h3 class="yellow-title">
+                    Profit per year, cash out in the end of 2 year perod
+                </h3>
+                <div class="gradient-line-block">
+                    <h4 class="grad-title">
+                        Year 1
+                    </h4>
+                    <div style="width: 80%" class="grad-line yellow-2"></div><span class="grad-text">44,9 kUSD</span>
+                </div>
+                <div class="gradient-line-block">
+                    <h4 class="grad-title">
+                        Year 2
+                    </h4>
+                    <div style="width: 30%" class="grad-line blue-2"></div><span class="grad-text">10,1 kUSD</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="token-allocation" class="token-allocation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h2 class="title">
+                    Token Allocation
+                </h2>
+                <p class="text">
+                    BM tokens are a digital asset, which represent a percentage share of Balkan Mining total hashrate. BM tokens are based on Stellar platform. A pre-ICO was conducted in the middle of 2017, successfully distributing 1 000 000 BMT and raising initial funds for technical documentation development, site and facilities construction, order of test mining equipment.
+                </p>
+                <p class="pre-line-text">
+                    85% Token Holders
+                </p>
+                <div class="line">
+                    <span class="blue" style="width: 85%"></span>
+                </div>
+                <p class="pre-line-text">
+                    8% Team
+                </p>
+                <div class="line"><span class="yellow" style="width: 8%"></span></div>
+                <p class="pre-line-text">
+                    5% Reserve
+                </p>
+                <div class="line"><span class="dark-blue" style="width: 5%"></span></div>
+                <p class="pre-line-text">
+                    2% Bounty
+                </p>
+                <div class="line"><span class="light-blue" style="width: 2%"></span></div>
+            </div>
+            <div class="col-md-5">
+                <div class="img-block">
+                    <img src="img/img_gf03@2x.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sale-details" class="sale-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title">
+                    Sale Details
+                </h2>
+                <p class="text">
+                    BM tokens are a digital asset, the possession of which is the right to receive the share of a hash of Balkan Mining. One BM token has a value of $ 1, at the ICO stage, with the maximum number of tokens issued - 100,000,000 units. BM tokens are based
+                    on the Stellar platform, and after the end of the ICO will be traded on the crypto-exchange markets.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1 col-xs-8 col-xs-offset-2">
+                <p class="line-text">Available</p>
+                <p class="line-text">100 000 000</p>
+                <p class="line-text">1 BMT = 1$</p>
+            </div>
+            <div class="col-md-2 col-xs-8 col-xs-offset-2 col-md-offset-0">
+                <p class="line-text">Presale</p>
+                <p class="line-text">1 000 000</p>
+                <p class="line-text">+50%</p>
+            </div>
+            <div class="col-md-2 col-xs-8 col-xs-offset-2 col-md-offset-0">
+                <p class="line-text">Fund-Raising (1 phase)</p>
+                <p class="line-text">18 000 000</p>
+                <p class="line-text">+20%</p>
+            </div>
+            <div class="col-md-2 col-xs-8 col-xs-offset-2 col-md-offset-0">
+                <p class="line-text">Fund-Raising (2 phase)</p>
+                <p class="line-text">26 000 000</p>
+                <p class="line-text">+10%</p>
+            </div>
+            <div class="col-md-2 col-xs-8 col-xs-offset-2 col-md-offset-0">
+                <p class="line-text">Fund-Raising (3 phase)</p>
+                <p class="line-text">40 000 000</p>
+                <p class="line-text">1 BMT = 1$</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-xs-2">
+                <div class="border-block left"></div>
+            </div>
+            <div class="col-md-4 col-xs-8">
+                <p class="borders-text">Start of ICO 1 May 2018</p>
+                <p class="borders-sub-text">Definitions: 90 Days</p>
+            </div>
+            <div class="col-md-4 col-xs-2">
+                <div class="border-block right"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="#" class="white-btn">
+                    Buy Tokens
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="roadmap" class="roadmap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title">
+                    Road Map
+                </h2>
+            </div>
+        </div>
+
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-md-4">
+                <div class="item-block bottom-line">
+                    <h3 class="date">May 2017</h3>
+                    <p class="text">BM company vision is created, and key team members formed</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block  bottom-line right-line">
+                    <h3 class="date">January 2018</h3>
+                    <p class="text">Finished mining facility, supporting up to 50MW of mining equipment</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block not-active bottom-line">
+                    <h3 class="date">August 2018</h3>
+                    <p class="text">All equipment is installed</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item-block bottom-line">
+                    <h3 class="date">July 2017</h3>
+                    <p class="text">Raised 500 000 on Pre-ICO round</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block bottom-line">
+                    <h3 class="date">February 2018</h3>
+                    <p class="text">First batch of equipment is installed, and first bitcoin is mined at BM company</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block not-active bottom-line">
+                    <h3 class="date">September 2018</h3>
+                    <p class="text">First payments to token holders</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item-block bottom-line">
+                    <h3 class="date">August 2017</h3>
+                    <p class="text">Finished technical project, receiveв official permissions for construction</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block bottom-line">
+                    <h3 class="date">April 2018</h3>
+                    <p class="text">Functional web cabinet</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block not-active">
+                    <h3 class="date">October 2018</h3>
+                    <p class="text">BM Tokens are tradable
+                        on stocks</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item-block right-line">
+                    <h3 class="date">September 2017</h3>
+                    <p class="text">Construction started</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block not-active">
+                    <h3 class="date">May 2018</h3>
+                    <p class="text">ICO starts</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden-md hidden-lg">
+            <div class="col-md-4">
+                <div class="item-block bottom-line">
+                    <h3 class="date">May 2017</h3>
+                    <p class="text">BM company vision is created, and key team members formed</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block bottom-line">
+                    <h3 class="date">July 2017</h3>
+                    <p class="text">Raised 500 000 on Pre-ICO round</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block bottom-line">
+                    <h3 class="date">August 2017</h3>
+                    <p class="text">Finished technical project, receiveв official permissions for construction</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block right-line">
+                    <h3 class="date">September 2017</h3>
+                    <p class="text">Construction started</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block  bottom-line right-line">
+                    <h3 class="date">January 2018</h3>
+                    <p class="text">Finished mining facility, supporting up to 50MW of mining equipment</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block bottom-line">
+                    <h3 class="date">February 2018</h3>
+                    <p class="text">First batch of equipment is installed, and first bitcoin is mined at BM company</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block bottom-line">
+                    <h3 class="date">April 2018</h3>
+                    <p class="text">Functional web cabinet</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block not-active">
+                    <h3 class="date">May 2018</h3>
+                    <p class="text">ICO starts</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block not-active bottom-line">
+                    <h3 class="date">August 2018</h3>
+                    <p class="text">All equipment is installed</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block not-active bottom-line">
+                    <h3 class="date">September 2018</h3>
+                    <p class="text">First payments to token holders</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item-block not-active">
+                    <h3 class="date">October 2018</h3>
+                    <p class="text">BM Tokens are tradable
+                        on stocks</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="advisors" class="advisors">
+    <div class="white-block-background">
+
+    </div>
+    <div class="container">
+        <h2 class="title">Our Team</h2>
+        <p class="sub-title">
+            Our management team consists of industry pioneers - including founders and early adopters of blockchain projects, as well as the creators of the ICO (initial coin offering) revolution.
+        </p>
+        <div class="row">
+            <div id="slider-users" class="slider-users">
+
+                <!--<div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">-->
+                <div class="advisory-block clearfix">
+                    <div class="img-block">
+                        <img src="img/img_team01.png" alt="">
+                    </div>
+                    <div class="description-block clearfix">
+                        <h4>Edgar Roberts</h4>
+                        <p class="title-block">Business Development</p>
+                    </div>
+                    <div class="link">
+                        <a href="">
+                            <img src="img/ic_linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!--</div>-->
+                <!--<div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">-->
+                <div class="advisory-block clearfix">
+                    <div class="img-block">
+                        <img src="http://kenwheeler.github.io/slick/img/fonz2.png" alt="">
+                    </div>
+                    <div class="description-block clearfix">
+                        <h4>Chase Carr</h4>
+                        <p class="title-block">Space The Final Frontier</p>
+                    </div>
+                    <div class="link">
+                        <a href="">
+                            <img src="img/ic_linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!--</div>-->
+                <!--<div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">-->
+                <div class="advisory-block clearfix">
+                    <div class="img-block">
+                        <img src="img/img_team01.png" alt="">
+                    </div>
+                    <div class="description-block clearfix">
+                        <h4>Chase Carr</h4>
+                        <p class="title-block">Space The Final Frontier</p>
+                    </div>
+                    <div class="link">
+                        <a href="">
+                            <img src="img/ic_linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!--</div>-->
+                <!--<div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">-->
+                <div class="advisory-block clearfix">
+                    <div class="img-block">
+                        <img src="img/img_team01.png" alt="">
+                    </div>
+                    <div class="description-block clearfix">
+                        <h4>Carlos Phelps</h4>
+                        <p class="title-block">Business Development</p>
+                    </div>
+                    <div class="link">
+                        <a href="">
+                            <img src="img/ic_linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!--</div>-->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact-us" class="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h2 class="title">Want to know more news?</h2>
+                <p class="sub-title">
+                    Subscribe to fing out all the most
+                    interesting news first
+                </p>
+                <form class="form-inline" action="">
+                    <div class="form-group">
+                        <input type="text" class="input-text"  placeholder="Type your email">
+                    </div>
+                    <button type="submit" class="btn-sbmt">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 text-center col-md-push-4">
+                <ul class="nav nav-pills navbar-icons">
+                    <li>
+                        <a class="icon" href="">
+                            <img src="img/sc_tel.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon" href="">
+                            <img src="img/sc_tw.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon" href="">
+                            <img src="img/sc_fb.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon" href="">
+                            <img src="img/sc_rd.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon" href="">
+                            <img src="img/sc_gh.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon" href="">
+                            <img src="img/sc_med.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon" href="">
+                            <img src="img/sc_bt.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 text-left col-md-pull-4 col-xs-6">
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-right col-xs-6">
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href="#">White Paper</a>
+                    </li>
+                    <li>
+                        <a href="#">Invest</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title">© 2017—2018 Copyright by MOBZOID</h2>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="slick/slick.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

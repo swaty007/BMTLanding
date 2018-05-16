@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="24px" viewBox="0 0 26 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mBMT_landing" transform="translate(-305.000000, -28.000000)" fill="#000000">
+            <g id="ic_menu" transform="translate(296.000000, 18.000000)">
+                <rect id="Rectangle-11" x="9" y="10" width="26" height="4"></rect>
+                <rect id="Rectangle-11" x="9" y="20" width="26" height="4"></rect>
+                <rect id="Rectangle-11" x="9" y="30" width="26" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
